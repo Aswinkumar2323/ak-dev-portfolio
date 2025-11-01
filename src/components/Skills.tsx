@@ -1,25 +1,26 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Component, Code, Box, Server, Smartphone, Flame, Zap, Paintbrush, GitGraph, Database, Package, Cloud, Terminal, Frame, Hexagon, type LucideIcon } from "lucide-react";
 
 const skills = [
-  { name: "React", color: "#61dafb" },
-  { name: "TypeScript", color: "#3178c6" },
-  { name: "Three.js", color: "#ffffff" },
-  { name: "Node.js", color: "#339933" },
-  { name: "Flutter", color: "#02569B" },
-  { name: "Firebase", color: "#FFCA28" },
-  { name: "Next.js", color: "#ffffff" },
-  { name: "Tailwind", color: "#06B6D4" },
-  { name: "GraphQL", color: "#E10098" },
-  { name: "MongoDB", color: "#47A248" },
-  { name: "Docker", color: "#2496ED" },
-  { name: "AWS", color: "#FF9900" },
-  { name: "Python", color: "#3776AB" },
-  { name: "Framer", color: "#0055FF" },
-  { name: "WebGL", color: "#990000" },
+  { name: "React", color: "#61dafb", Icon: Component },
+  { name: "TypeScript", color: "#3178c6", Icon: Code },
+  { name: "Three.js", color: "#ffffff", Icon: Box },
+  { name: "Node.js", color: "#339933", Icon: Server },
+  { name: "Flutter", color: "#02569B", Icon: Smartphone },
+  { name: "Firebase", color: "#FFCA28", Icon: Flame },
+  { name: "Next.js", color: "#ffffff", Icon: Zap },
+  { name: "Tailwind", color: "#06B6D4", Icon: Paintbrush },
+  { name: "GraphQL", color: "#E10098", Icon: GitGraph },
+  { name: "MongoDB", color: "#47A248", Icon: Database },
+  { name: "Docker", color: "#2496ED", Icon: Package },
+  { name: "AWS", color: "#FF9900", Icon: Cloud },
+  { name: "Python", color: "#3776AB", Icon: Terminal },
+  { name: "Framer", color: "#0055FF", Icon: Frame },
+  { name: "WebGL", color: "#990000", Icon: Hexagon },
 ];
 
-const KeyCap = ({ skill, index }: { skill: { name: string; color: string }; index: number }) => {
+const KeyCap = ({ skill, index }: { skill: { name: string; color: string; Icon: LucideIcon }; index: number }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -59,10 +60,18 @@ const KeyCap = ({ skill, index }: { skill: { name: string; color: string }; inde
           }}
         />
 
-        {/* Skill name */}
-        <div className="relative z-10 text-center">
+        {/* Skill icon and name */}
+        <div className="relative z-10 text-center flex flex-col items-center gap-2">
+          <motion.div
+            animate={{
+              color: isHovered ? skill.color : "hsl(var(--foreground))",
+              filter: isHovered ? `drop-shadow(0 0 10px ${skill.color})` : "none",
+            }}
+          >
+            <skill.Icon size={32} />
+          </motion.div>
           <motion.p
-            className="text-lg font-bold"
+            className="text-sm font-bold"
             animate={{
               color: isHovered ? skill.color : "hsl(var(--foreground))",
               textShadow: isHovered ? `0 0 20px ${skill.color}` : "none",
