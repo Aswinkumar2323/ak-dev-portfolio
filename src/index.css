@@ -39,8 +39,8 @@ All colors MUST be HSL.
     --radius: 1rem;
 
     /* Premium cyber gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(190 100% 50%), hsl(280 100% 60%));
-    --gradient-glow: linear-gradient(135deg, hsl(190 100% 50% / 0.2), hsl(280 100% 60% / 0.2));
+    --gradient-primary: linear-gradient(135deg, hsl(280 100% 65%), hsl(330 100% 60%));
+    --gradient-glow: linear-gradient(135deg, hsl(280 100% 65% / 0.2), hsl(330 100% 60% / 0.2));
     --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.05), hsl(0 0% 100% / 0.02));
     
     /* Shadows and glows */
@@ -83,8 +83,8 @@ All colors MUST be HSL.
     --ring: 190 100% 50%;
 
     /* Premium cyber gradients - dark mode */
-    --gradient-primary: linear-gradient(135deg, hsl(190 100% 50%), hsl(280 100% 60%));
-    --gradient-glow: linear-gradient(135deg, hsl(190 100% 50% / 0.3), hsl(280 100% 60% / 0.3));
+    --gradient-primary: linear-gradient(135deg, hsl(280 100% 65%), hsl(330 100% 60%));
+    --gradient-glow: linear-gradient(135deg, hsl(280 100% 65% / 0.3), hsl(330 100% 60% / 0.3));
     --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.03), hsl(0 0% 100% / 0.01));
     
     /* Shadows and glows - dark mode */
