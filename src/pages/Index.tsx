@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import CustomCursor from "@/components/CustomCursor";
+//import CustomCursor from "@/components/CustomCursor";
 import ParticleBackground from "@/components/ParticleBackground";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
@@ -16,7 +16,7 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen">
-      <CustomCursor />
+   {/*   <CustomCursor /> */}
       <ParticleBackground />
       <Navigation />
       <main id="home">

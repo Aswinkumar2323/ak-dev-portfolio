@@ -103,9 +103,9 @@ All colors MUST be HSL.
     @apply bg-background text-foreground overflow-x-hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
   }
-
+/* 
   /* Custom cursor */
-  .custom-cursor {
+ /* .custom-cursor {
     position: fixed;
     width: 20px;
     height: 20px;
@@ -119,7 +119,7 @@ All colors MUST be HSL.
 
   .custom-cursor.hover {
     transform: scale(2);
-  }
+  } */
 
   /* Glassmorphism */
   .glass {
