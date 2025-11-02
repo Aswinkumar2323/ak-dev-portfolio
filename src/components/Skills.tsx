@@ -11,15 +11,17 @@ import {
   Network,
   Webhook,
   Link,
+  Blocks,
+  ShieldCheck,
   type LucideIcon,
 } from "lucide-react";
 
 const skills = [
-  { name: "HTML", color: "#E44D26", Icon: Globe },
-  { name: "CSS", color: "#264DE4", Icon: Palette },
+  { name: "Flutter", color: "#02569B", Icon: Smartphone },
   { name: "JavaScript", color: "#F7DF1E", Icon: FileJson },
   { name: "Node.js", color: "#339933", Icon: Server },
-  { name: "Flutter", color: "#02569B", Icon: Smartphone },
+  { name: "Blockchain", color: "#3776AB", Icon: Blocks },
+  { name: "Solidity", color: "#E44D26", Icon: ShieldCheck },
   { name: "Firebase", color: "#FFCA28", Icon: Flame },
   { name: "Kotlin", color: "#7F52FF", Icon: Code2 },
   { name: "REST API", color: "#06B6D4", Icon: Link },

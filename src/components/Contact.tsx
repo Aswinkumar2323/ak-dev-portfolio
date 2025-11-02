@@ -6,11 +6,23 @@ import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { toast } from "sonner";
 
-// ✅ Updated social links
+/* ✅ Upwork Icon SVG */
+const UpworkIcon = (props) => (
+  <svg
+    {...props}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path d="M17.5 3c-2.2 0-4 1.8-4 4v3.7c-.6-.8-1.2-1.8-1.7-2.8L10 5H8.3v6.3c0 1-.8 1.7-1.7 1.7S5 12.3 5 11.3V5H3v6.3c0 2.1 1.7 3.7 3.7 3.7 1.6 0 2.9-.9 3.4-2.2.7.9 1.5 1.7 2.4 2.4v3.8h2v-3c2.2-.2 4-2 4-4.3V7c0-2.2-1.8-4-4-4zm2 8.3c0 1.2-.9 2.2-2 2.3V7c0-1.1.9-2 2-2v6.3z"/>
+  </svg>
+);
+
+/* ✅ Updated social links */
 const socialLinks = [
   { icon: Github, href: "https://github.com/Aswinkumar2323", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/aswin-kumar-/", label: "LinkedIn" },
   { icon: Twitter, href: "https://x.com/AswinKumar2323", label: "Twitter / X" },
+  { icon: UpworkIcon, href: "https://www.upwork.com/freelancers/~0157714dce55800497?mp_source=share", label: "Upwork" },
 ];
 
 const Contact = () => {

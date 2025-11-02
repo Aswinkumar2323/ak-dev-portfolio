@@ -3,21 +3,20 @@ import { Award, Zap, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const aboutPoints = [
-  "Hi, I'm Aswin Kumar — a Cloud & Full-Stack Developer specializing in Flutter, Firebase, and backend systems.",
-  "Over the past year, I've worked on parental monitoring platforms, real-time IoT early-warning systems, and subscription platforms integrating Razorpay & Chargebee.",
-  "I focus on building secure, scalable, and automation-driven applications with strong real-time architecture.",
+  "Hi, I'm Aswin Kumar, a Mobile and Full-Stack Developer with hands-on experience in Flutter, Firebase, backend engineering, cloud technologies and Blockchain.",
+  "I build high-performance digital products including parental monitoring platforms, NFT marketplace platforms and automated subscription pipelines using Razorpay and Chargebee.",
+  "My development approach focuses on real-time architecture, automation, secure data workflows, and scalable cloud infrastructure.",
 ];
 
 const highlights = [
-  "Exceptional Performance Award — Full-Stack Developer",
-  "Subscription & payments automation (Chargebee + Razorpay)",
-  "Proven resilience in fast-paced product environments",
+  "Recognized with an Exceptional Performance Award for Full-Stack Engineering contribution at a startup",
+  "Developed complete subscription automation and payment systems integrating Chargebee and Razorpay",
 ];
 
 export default function AboutMe() {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Aswin_Kumar_Resume.docx"; // upload your resume as public file in /public folder
+    link.href = "/Aswin_Kumar_Resume.docx"; 
     link.download = "Aswin-Kumar-Resume.docx";
     link.click();
   };
@@ -25,6 +24,8 @@ export default function AboutMe() {
   return (
     <section className="py-32 relative" id="about">
       <div className="container mx-auto px-4">
+        
+        {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -36,27 +37,28 @@ export default function AboutMe() {
             <span className="bg-gradient-primary bg-clip-text text-transparent">About Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A quick introduction to my work, mission, and skills
+            A brief introduction to my experience, mission, and expertise.
           </p>
         </motion.div>
 
-        {/* About Text */}
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4">
+        {/* About & Highlights */}
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          
+          {/* About Text */}
+          <div className="space-y-5">
             {aboutPoints.map((point, i) => (
               <motion.p
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.2 }}
+                transition={{ delay: i * 0.15 }}
                 viewport={{ once: true }}
-                className="text-lg text-muted-foreground"
+                className="text-lg text-muted-foreground leading-relaxed"
               >
                 {point}
               </motion.p>
             ))}
 
-            {/* Download Resume button */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -75,25 +77,28 @@ export default function AboutMe() {
           </div>
 
           {/* Highlights */}
-          <div className="grid gap-6">
-            <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
-              <Award className="w-6 h-6 text-primary" /> Highlights
+          <div>
+            <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
+              <Award className="w-6 h-6 text-primary" /> Key Highlights
             </h3>
-            <ul className="space-y-2">
+
+            <ul className="space-y-4">
               {highlights.map((item, i) => (
                 <motion.li
                   key={i}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.15 }}
+                  transition={{ delay: i * 0.12 }}
                   viewport={{ once: true }}
-                  className="flex items-start gap-2 text-muted-foreground"
+                  className="flex items-start gap-3 text-muted-foreground text-lg leading-relaxed"
                 >
-                  <Zap className="w-4 h-4 text-primary mt-1" /> {item}
+                  <Zap className="w-4 h-4 text-primary mt-1" />
+                  {item}
                 </motion.li>
               ))}
             </ul>
           </div>
+
         </div>
       </div>
     </section>

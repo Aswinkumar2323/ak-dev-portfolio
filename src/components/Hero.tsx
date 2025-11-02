@@ -25,7 +25,8 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-2xl font-medium text-muted-foreground"
             >
-              Hi, I'm <span className="font-bold text-primary">Aswin Kumar</span>
+              Hi, I'm <span className="font-bold bg-gradient-to-r from-blue-600 to-teal-500 dark:from-blue-400 dark:to-teal-300 bg-clip-text text-transparent">
+                Aswin Kumar </span>
             </motion.p>
 
             {/* Title */}

@@ -6,6 +6,7 @@ const navItems = [
   { label: "Home", href: "#home" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
+  { label: "Experience", href: "#experience" },
   { label: "About Me", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
@@ -39,9 +40,7 @@ const Navigation = () => {
             className="text-2xl font-bold interactive"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Portfolio
-            </span>
+           
           </motion.a>
 
           {/* Navigation Links */}

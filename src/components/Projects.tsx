@@ -2,19 +2,28 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "WEATHERSPHERE",
+    title: "WEATHERSPHERE — Smart Weather Forecast System",
     description:
-      "Weathersphere is a smart weather application that delivers accurate, real-time, location-based weather insights to help users plan their day and stay safe. It provides live temperature readings, weekly forecasts, air-quality information, and severe weather alerts — all powered by environmental data and device location services.",
+      "A real-time smart weather application with GPS-enabled forecasting, live weather analytics, and emergency alert system. Built with Flutter to deliver precise temperature, humidity, AQI, and severe weather warnings using REST APIs and device geolocation.",
     tags: [
-      "Flutter", "Dart", "REST API", "Weather Data", "Geolocation",
-      "Mobile Development", "State Management", "UI/UX Design", "Real-time Forecasting"
+      "Flutter", "Dart", "REST API", "Weather API", "Geolocation", 
+      "Real-Time Updates", "Mobile App", "UI/UX", "State Management"
     ],
   },
   {
-    title: "NFT Marketplace Platform",
+    title: "NFT Marketplace Platform — Web3 Trading System",
     description:
-      "A modern NFT marketplace with wallet support, NFT minting, auction bidding, and secure smart-contract based trading. Built for next-gen Web3 users with seamless UI and fast blockchain interaction.",
-    tags: ["NFT", "Next.js", "Solidity", "Web3", "IPFS", "Blockchain"],
+      "A decentralized NFT marketplace supporting wallet login, NFT minting, secure smart-contract trading, and auction system. Built on Ethereum with Next.js and IPFS, enabling fast blockchain interaction and seamless crypto asset management.",
+    tags: ["Next.js", "Solidity", "Ethereum", "Web3.js", "IPFS", "Blockchain", "Smart Contracts"],
+  },
+  {
+    title: "LAN-to-LAN Audio Calling DApp (WebRTC SDK)",
+    description:
+      "A serverless WebRTC-powered DApp enabling peer-to-peer voice calls within local networks. Built without SIP or dedicated signaling servers by leveraging Firebase Firestore for custom signaling. Includes a reusable LAN WebRTC SDK for decentralized communication architectures.",
+    tags: [
+      "WebRTC", "Peer-to-Peer", "Firebase", "Vite", "HTML", "CSS",
+      "Serverless", "Real-Time Communication", "Decentralized Apps"
+    ],
   },
 ];
 
@@ -37,7 +46,7 @@ const Projects = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Explore my latest work showcasing innovation & problem-solving
+            A showcase of impactful real-world projects in Web3, real-time communication, and scalable mobile systems.
           </p>
         </motion.div>
 
