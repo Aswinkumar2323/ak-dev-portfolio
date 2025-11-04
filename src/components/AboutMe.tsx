@@ -16,8 +16,8 @@ const highlights = [
 export default function AboutMe() {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Aswin_Kumar_Resume.docx"; 
-    link.download = "Aswin-Kumar-Resume.docx";
+    link.href = "/Aswin-Kumar-Resume.pdf"; 
+    link.download = "Aswin-Kumar-Resume.pdf";
     link.click();
   };
 
